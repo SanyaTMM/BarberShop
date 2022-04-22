@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Барбершоп «Бородинский»</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="inner-page">
+
+    <header class="main-header">
+        <nav class="main-navigation container">
+            <a class="main-header-logo" href="index.html">
+                <img src="jpg/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
+            </a>
+                    <ul class="site-navigation">
+                        <li>
+                            <a href="index.html#features">Информация</a>
+                        </li>
+                        <li>
+                            <a href="index.html#news">Новости</a>
+                        </li>
+                        <li>
+                            <a href="price.html">Прайс-лист</a>
+                        </li>
+                        <li>
+                            <a href="catalog.html">Магазин</a>
+                        </li>
+                        <li class="site-navigation-current">
+                            <a href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="user-navigation">
+                        <li>
+                            <a class="login-link" href="login.html">Вход</a>
+                        </li>
+                    </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="inner-page-container">
+                <h1 class="page-title">Контакты</h1>
+                <ul class="breadcrumbs">
+                    <li><a href="index.html">Главная</a></li>
+                    <li class="breadcrumbs-current">Контакты</li>
+                </ul>
+            </div>
+            <section class="schedule contacts-content-wrapper">
+                <h2 class="inner-content-title">Режим работы нашего салона:</h2>
+                <table>
+                    <tr>
+                        <td>Понедельник - Пятница</td>
+                        <td>10:00 - 21:00</td>
+                        <td rowspan="2">Без обеда</td>
+                    </tr>
+                    <tr>
+                        <td>Суббота - Воскресенье</td>
+                        <td>10:00 - 19:00</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="location contacts-content-wrapper">
+                <p>
+                    Мы ждем вас по адресу:
+                    <br>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8
+                </p>
+                <p>
+                    Телефон для записи:
+                    <br>+7 (812) 555-55-55
+                </p>
+                <iframe id="map" class="location-map" src="https://yandex.ru/map-widget/v1/-/CBQJiVTrHC" width="940" height="500"></iframe>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p class="footer-contacts" id="contacts">
+                Барбершоп «Бородинский»
+                <br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
+                <br>
+                <a href="map.html">Как нас найти?</a>
+                <br> Телефон: +7 (812) 666-02-66
+            </p>
+            <div class="footer-social">
+                <b>Давайте дружить!</b>
+                <ul>
+                    <li>
+                        <a class="social-button" href="#">Вконтакте</a>
+                    </li>
+                    <li>
+                        <a class="social-button" href="#">Фейсбук</a>
+                    </li>
+                    <li>
+                        <a class="social-button" href="#">Инстаграм</a>
+                    </li>
+                </ul>
+            </div>
+            <p class="footer-copyright">
+                <b>Разработано:</b>
+                <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+            </p>
+        </div>
+    </footer>
+
+    <section class="modal modal-login">
+        <h2>Личный кабинет</h2>
+        <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
+        <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p>
+                <label class="visually-hidden" for="user-login"></label>
+                <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+            </p>
+            <p>
+                <label class="visually-hidden" for="user-password"></label>
+                <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+            </p>
+            <p class="login-help">
+                <label class="login-checkbox">
+                    <input type="checkbox" name="remember" class="visually-hidden">
+                    <span class="checkbox-indicator"></span>
+                    Запомните меня
+                </label>
+                <a class="restore" href="#">Я забыл пароль!</a>
+            </p>
+            <button class="button" type="submit">Войти</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>
